@@ -1,10 +1,6 @@
-import Link from "next/link"
+import Link from "next/link";
+import PageLayout from "../components/layouts/page";
 
 export default function About() {
-    return (
-      <div>
-        About
-      </div>
-    )
-  }
-  
+  return <PageLayout>About page</PageLayout>;
+}
