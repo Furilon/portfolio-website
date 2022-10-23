@@ -1,6 +1,12 @@
-import { Flex, Heading, Text, Image, chakra } from "@chakra-ui/react";
 import Project from "../../components/project";
 import PageLayout from "../../components/layouts/page";
+import TodoImg from "../../public/to-do-app.png";
+import PandoraImg from "../../public/pandora.png";
+import CvAppImg from "../../public/cv-application.png";
+import ShopCartImg from "../../public/shopping-cart.png";
+import MembershipImg from "../../public/membership-club.png";
+import BlogImg from "../../public/blog-user-frontend.png";
+import { Flex, Heading, Text, Image, chakra } from "@chakra-ui/react";
 
 const LIVE_LINKS = {
   pandora: "https://theprojectpandora.com",
@@ -26,6 +32,15 @@ const DESCRIPTIONS = {
     "An ExpressJS app with local Passport authorization strategy ",
 };
 
+const IMAGES = {
+  pandora: "/pandora.png",
+  "to-do-app": "./to-do-app.png",
+  "cv-application": "/cv-application.png",
+  "shopping-cart": "/shopping-cart.png",
+  "blog-user-frontend": "/blog-user-frontend.png",
+  "membership-club": "/membership-club.png",
+};
+
 export async function getStaticPaths() {
   return {
     paths: [
@@ -42,12 +57,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const ghLink = `https://github.com/Furilon/${params.projectName}`;
+  const img = IMAGES[params.projectName];
   const liveLink = LIVE_LINKS[params.projectName];
   const description = DESCRIPTIONS[params.projectName];
 
   return {
     props: {
-      //   img,
+      img,
       ghLink,
       liveLink,
       description,
@@ -56,10 +72,11 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Page({ img, ghLink, liveLink, description }) {
+  console.log({ img, ghLink, liveLink, description });
   return (
     <PageLayout title="Project">
       <Project
-        // img={img}
+        img={img}
         ghLink={ghLink}
         liveLink={liveLink}
         description={description}
