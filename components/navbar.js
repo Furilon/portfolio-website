@@ -6,14 +6,12 @@ import {
   Box,
   Link,
   Stack,
-  Heading,
   Flex,
   Menu,
   MenuItem,
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
@@ -22,7 +20,6 @@ const Navbar = () => {
     <Box as="nav" w="100%" p="10px">
       <Container
         display="flex"
-        maxW="container.md"
         wrap="wrap"
         align="center"
         justify="space-between"
