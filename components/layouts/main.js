@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Navbar from "../navbar";
-import { Box, Container } from "@chakra-ui/react";
+import { Box, Container, Flex } from "@chakra-ui/react";
 
 export default function MainLayout({ children, router }) {
   return (
-    <Box as="main" pb={8}>
+    <Flex as="main" pb={8} bg="#1e1e1e" minH="100vh" direction="column">
       <Head>
         <meta charSet="UTF-8" />
         <meta name="application-name" content="Portfolio Website" />
@@ -30,6 +30,6 @@ export default function MainLayout({ children, router }) {
       </Head>
       <Navbar />
       <Container maxW="container.md">{children}</Container>
-    </Box>
+    </Flex>
   );
 }
