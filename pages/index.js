@@ -5,9 +5,9 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 
 import PageLayout from "../components/layouts/page";
 
-export default function Index({ children, router }) {
+export default function Index() {
   return (
-    <PageLayout>
+    <PageLayout title="Homepage -  MM">
       <Container>
         <Box borderRadius="lg" bg="red" p={3} mb={6} align="center">
           Hello, I&apos;m a full-stack developer!
@@ -15,15 +15,11 @@ export default function Index({ children, router }) {
 
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
-            <Heading as="h2" variant="page-title">
-              Mykyta Medvediev
-            </Heading>
+            <Heading as="h1">Mykyta Medvediev</Heading>
           </Box>
         </Box>
         <Section delay={0.1}>
-          <Heading as="h3" variant="section-title">
-            Index
-          </Heading>
+          <Heading>Index</Heading>
           <p>Paragraph</p>
           <Box align="center" my={4}>
             <NextLink href="/works">
