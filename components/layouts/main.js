@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../navbar";
+import Footer from "../footer";
 import { Box, Container, Flex } from "@chakra-ui/react";
 
 export default function MainLayout({ children, router }) {
@@ -32,6 +33,7 @@ export default function MainLayout({ children, router }) {
       <Container maxW="container.md" textColor="white">
         {children}
       </Container>
+      <Footer />
     </Flex>
   );
 }
