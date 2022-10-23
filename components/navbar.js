@@ -17,22 +17,6 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-const LinkItem = ({ href, path, children }) => {
-  const active = path === href;
-  const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
-  return (
-    <NextLink href={href}>
-      <Link
-        p={2}
-        bg={active ? "glassTeal" : undefined}
-        color={active ? "#202023" : inactiveColor}
-      >
-        {children}
-      </Link>
-    </NextLink>
-  );
-};
-
 const Navbar = (props) => {
   const { path } = props;
   return (
@@ -67,15 +51,9 @@ const Navbar = (props) => {
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          <LinkItem href="/" path={path}>
-            Homepage
-          </LinkItem>
-          <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
-          <LinkItem href="/about" path={path}>
-            About
-          </LinkItem>
+          <Link href="/">Homepage</Link>
+          <Link href="/works">Works</Link>
+          <Link href="/about">About</Link>
         </Stack>
 
         <Box flex={1} align="right">
