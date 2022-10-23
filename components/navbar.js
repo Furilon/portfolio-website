@@ -17,30 +17,18 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-const Navbar = (props) => {
-  const { path } = props;
+const Navbar = () => {
   return (
-    <Box
-      position="fixed"
-      as="nav"
-      w="100%"
-      bg={useColorModeValue("#ffffff40", "#20202380")}
-      style={{ backdropFilter: "blur(10px)" }}
-      zIndex={1}
-      {...props}
-    >
+    <Box as="nav" w="100%" p="10px">
       <Container
         display="flex"
-        p={2}
         maxW="container.md"
         wrap="wrap"
         align="center"
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={"tighter"}>
-            <Logo />
-          </Heading>
+          <Logo />
         </Flex>
 
         <Stack
@@ -51,7 +39,6 @@ const Navbar = (props) => {
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
         >
-          <Link href="/">Homepage</Link>
           <Link href="/works">Works</Link>
           <Link href="/about">About</Link>
         </Stack>
