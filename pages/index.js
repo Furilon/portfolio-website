@@ -1,5 +1,13 @@
 import NextLink from "next/link";
-import { Container, Box, Heading, Button, Link, Text } from "@chakra-ui/react";
+import {
+  Container,
+  Box,
+  Heading,
+  Button,
+  Link,
+  Text,
+  Flex,
+} from "@chakra-ui/react";
 import Section from "../components/section";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
@@ -35,13 +43,15 @@ export default function Index() {
           <Text as="p" textColor="white">
             Paragraph
           </Text>
-          <Box align="center" my={4}>
+          <Flex direction="column" justify="center" align="center" my={4}>
             <NextLink href="/works">
               <Button
                 rightIcon={<ChevronRightIcon />}
                 borderColor="white"
                 textColor="white"
                 variant="outline"
+                w="175px"
+                mb="20px"
                 _hover={{
                   bg: "#cdcdcd",
                   textColor: "#1e1e1e",
@@ -50,7 +60,23 @@ export default function Index() {
                 My Portfolio
               </Button>
             </NextLink>
-          </Box>
+            <NextLink href="/about">
+              <Button
+                rightIcon={<ChevronRightIcon />}
+                borderColor="white"
+                textColor="white"
+                variant="outline"
+                w="175px"
+                mb="20px"
+                _hover={{
+                  bg: "#cdcdcd",
+                  textColor: "#1e1e1e",
+                }}
+              >
+                About me
+              </Button>
+            </NextLink>
+          </Flex>
         </Section>
       </Container>
     </PageLayout>
