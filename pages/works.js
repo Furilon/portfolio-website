@@ -6,7 +6,6 @@ export default function Works() {
   return (
     <PageLayout title="Works - MM">
       <Heading as="h1">Projects</Heading>
-      {/* Works */}
     </PageLayout>
   );
 }
