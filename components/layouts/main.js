@@ -29,9 +29,7 @@ export default function MainLayout({ children, router }) {
         <meta property="og:image" content="/Logo_with_background.png" />
       </Head>
       <Navbar />
-      <Container maxW="container.md" pt={14}>
-        {children}
-      </Container>
+      <Container maxW="container.md">{children}</Container>
     </Box>
   );
 }
