@@ -1,4 +1,3 @@
-import "../styles/globals.css";
 import MainLayout from "../components/layouts/main";
 import { ChakraProvider } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
