@@ -2,12 +2,12 @@ import MainLayout from "../components/layouts/main";
 import { ChakraProvider } from "@chakra-ui/react";
 import { AnimatePresence } from "framer-motion";
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <MainLayout router={router}>
+      <MainLayout>
         <AnimatePresence exitBeforeEnter initial={true}>
-          <Component {...pageProps} key={router.route} />
+          <Component {...pageProps} />
         </AnimatePresence>
       </MainLayout>
     </ChakraProvider>
