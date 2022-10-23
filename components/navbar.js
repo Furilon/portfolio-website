@@ -35,6 +35,7 @@ const Navbar = () => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
+          textColor="white"
         >
           <Link href="/works">Works</Link>
           <Link href="/about">About</Link>
@@ -42,23 +43,40 @@ const Navbar = () => {
 
         <Box flex={1} align="right">
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
-            <Menu>
+            <Menu autoSelect="false">
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
+                _active={{ bg: "#CDCDCD", border: "none", color: "#1e1e1e" }}
+                color="white"
               ></MenuButton>
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>Homepage</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/about" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
+              <MenuList bg="#1e1e1e" textColor="white">
+                <Link href="/">
+                  <MenuItem
+                    _focus={{ bg: "#cdcdcd", textColor: "#1e1e1e" }}
+                    _active={{ bg: "#cdcdcd", textColor: "#1e1e1e" }}
+                  >
+                    Homepage
+                  </MenuItem>
+                </Link>
+                <Link href="/works">
+                  <MenuItem
+                    _focus={{ bg: "#cdcdcd", textColor: "#1e1e1e" }}
+                    _active={{ bg: "#cdcdcd", textColor: "#1e1e1e" }}
+                  >
+                    Works
+                  </MenuItem>
+                </Link>
+                <Link href="/about">
+                  <MenuItem
+                    _focus={{ bg: "#cdcdcd", textColor: "#1e1e1e" }}
+                    _active={{ bg: "#cdcdcd", textColor: "#1e1e1e" }}
+                  >
+                    About
+                  </MenuItem>
+                </Link>
               </MenuList>
             </Menu>
           </Box>
