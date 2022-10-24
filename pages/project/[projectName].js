@@ -41,6 +41,15 @@ const IMAGES = {
   "membership-club": "/membership-club.png",
 };
 
+const PROJECT_NAMES = {
+  pandora: "Project Pandora",
+  "to-do-app": "To-do Application",
+  "cv-application": "CV Generator",
+  "shopping-cart": "Shopping Cart",
+  "blog-user-frontend": "Blog",
+  "membership-club": "Membership Club",
+};
+
 export async function getStaticPaths() {
   return {
     paths: [
@@ -60,9 +69,11 @@ export async function getStaticProps({ params }) {
   const img = IMAGES[params.projectName];
   const liveLink = LIVE_LINKS[params.projectName];
   const description = DESCRIPTIONS[params.projectName];
+  const projectName = PROJECT_NAMES[params.projectName];
 
   return {
     props: {
+      projectName,
       img,
       ghLink,
       liveLink,
@@ -71,11 +82,17 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Page({ img, ghLink, liveLink, description }) {
-  console.log({ img, ghLink, liveLink, description });
+export default function Page({
+  projectName,
+  img,
+  ghLink,
+  liveLink,
+  description,
+}) {
   return (
     <PageLayout title="Project">
       <Project
+        projectName={projectName}
         img={img}
         ghLink={ghLink}
         liveLink={liveLink}

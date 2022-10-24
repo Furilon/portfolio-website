@@ -1,11 +1,18 @@
-import { Image, Link, Button, Flex, Header, Text } from "@chakra-ui/react";
+import { Image, Link, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
-export default function Project({ ghLink, liveLink, img, description }) {
+export default function Project({
+  projectName,
+  ghLink,
+  liveLink,
+  img,
+  description,
+}) {
   return (
     <Flex direction="column">
-      <Flex>
+      <Flex direction="column" justify="center" align="center">
+        <Heading>{projectName}</Heading>
         <Image
           src={img}
           // w={{ base: "356px", sm: "510", md: "1187", lg: "1780px" }}
@@ -17,9 +24,10 @@ export default function Project({ ghLink, liveLink, img, description }) {
           border="8px"
           borderRadius="10px"
           borderColor="gray"
+          mt="10px"
         />
       </Flex>
-      <Flex justify="center" align="center" gap="20px">
+      <Flex justify="center" align="center" gap="20px" mt="10px" mb="20px">
         <Link href={ghLink} isExternal>
           <Button
             leftIcon={<AiFillGithub />}
