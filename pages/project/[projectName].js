@@ -34,7 +34,7 @@ const DESCRIPTIONS = {
 
 const IMAGES = {
   pandora: "/pandora.png",
-  "to-do-app": "./to-do-app.png",
+  "to-do-app": "/to-do-app.png",
   "cv-application": "/cv-application.png",
   "shopping-cart": "/shopping-cart.png",
   "blog-user-frontend": "/blog-user-frontend.png",
