@@ -1,20 +1,47 @@
 import { Image, Link, Button, Flex, Header, Text } from "@chakra-ui/react";
-// import Img from "../components/image";
+import { AiFillGithub } from "react-icons/ai";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 export default function Project({ ghLink, liveLink, img, description }) {
   return (
     <Flex direction="column">
-      <Image
-        src={img}
-        // w={{ base: "356px", sm: "510", md: "1187", lg: "1780px" }}
-        // h={{ base: "273", sm: "390", md: "911", lg: "1366px" }}
-        w="fill"
-        h="auto"
-        alt="Project Screenshot"
-        layout="fill"
-      />
-      <Link href={ghLink}>GH Link</Link>
-      <Link href={liveLink}>Live Link</Link>
+      <Flex>
+        <Image
+          src={img}
+          // w={{ base: "356px", sm: "510", md: "1187", lg: "1780px" }}
+          // h={{ base: "273", sm: "390", md: "911", lg: "1366px" }}
+          w="fill"
+          h="auto"
+          alt="Project Screenshot"
+          layout="fill"
+          border="8px"
+          borderRadius="10px"
+          borderColor="gray"
+        />
+      </Flex>
+      <Flex justify="center" align="center" gap="20px">
+        <Link href={ghLink}>
+          <Button
+            leftIcon={<AiFillGithub />}
+            bg="#cdcdcd"
+            textColor="#1e1e1e"
+            _hover={{
+              bg: "whiteAlpha.600",
+            }}
+          >
+            GitHub
+          </Button>
+        </Link>
+        <Link href={liveLink}>
+          <Button
+            leftIcon={<ExternalLinkIcon />}
+            bg="purple.500"
+            _hover={{ bg: "purple.700" }}
+          >
+            Live Version
+          </Button>
+        </Link>
+      </Flex>
       <Text>{description}</Text>
     </Flex>
   );
