@@ -20,7 +20,7 @@ export default function Project({ ghLink, liveLink, img, description }) {
         />
       </Flex>
       <Flex justify="center" align="center" gap="20px">
-        <Link href={ghLink}>
+        <Link href={ghLink} isExternal>
           <Button
             leftIcon={<AiFillGithub />}
             bg="#cdcdcd"
@@ -32,7 +32,7 @@ export default function Project({ ghLink, liveLink, img, description }) {
             GitHub
           </Button>
         </Link>
-        <Link href={liveLink}>
+        <Link href={liveLink} isExternal>
           <Button
             leftIcon={<ExternalLinkIcon />}
             bg="purple.500"
