@@ -29,12 +29,12 @@ const PROJECT_LINKS = {
 };
 
 const PROJECT_TAGS = {
-  pandora: [],
-  "to-do-app": [],
-  "cv-application": [],
-  "shopping-cart": [],
-  "blog-user-frontend": [],
-  "membership-club": [],
+  pandora: ["next.js", "react", "chakra-ui", "eslint"],
+  "to-do-app": ["vanilla js", "IIFE", "factory funcs", "css"],
+  "cv-application": ["react", "useState"],
+  "shopping-cart": ["react", "react-router-dom", "useState"],
+  "blog-user-frontend": ["express", "ejs", "react", "heroku", "API"],
+  "membership-club": ["passport", "authentication", "express", "heroku"],
 };
 
 const PROJECT_INFO = {
@@ -79,8 +79,8 @@ const PROJECT_INFO = {
 export default function GridOfProjects() {
   return (
     <Grid
-      templateColumns="repeat(2, 1fr)"
-      templateRows="repeat(3, 1fr)"
+      templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+      templateRows={{ base: "repeat(6, 1fr)", md: "repeat(3, 1fr)" }}
       gap={6}
     >
       {Object.keys(PROJECT_INFO).map((project) => (
@@ -92,96 +92,6 @@ export default function GridOfProjects() {
           image={PROJECT_INFO[project].image}
         />
       ))}
-      {/* <Link href="/project/pandora">
-        <Button
-          borderColor="white"
-          textColor="white"
-          variant="outline"
-          w="215px"
-          mb="20px"
-          _hover={{
-            bg: "#cdcdcd",
-            textColor: "#1e1e1e",
-          }}
-        >
-          Pandora
-        </Button>
-      </Link>
-      <Link href="/project/to-do-app">
-        <Button
-          borderColor="white"
-          textColor="white"
-          variant="outline"
-          w="215px"
-          mb="20px"
-          _hover={{
-            bg: "#cdcdcd",
-            textColor: "#1e1e1e",
-          }}
-        >
-          To-do List
-        </Button>
-      </Link>
-      <Link href="/project/blog-user-frontend">
-        <Button
-          borderColor="white"
-          textColor="white"
-          variant="outline"
-          w="215px"
-          mb="20px"
-          _hover={{
-            bg: "#cdcdcd",
-            textColor: "#1e1e1e",
-          }}
-        >
-          Blog
-        </Button>
-      </Link>
-      <Link href="/project/membership-club">
-        <Button
-          borderColor="white"
-          textColor="white"
-          variant="outline"
-          w="215px"
-          mb="20px"
-          _hover={{
-            bg: "#cdcdcd",
-            textColor: "#1e1e1e",
-          }}
-        >
-          Membership Club Board
-        </Button>
-      </Link>
-      <Link href="/project/shopping-cart">
-        <Button
-          borderColor="white"
-          textColor="white"
-          variant="outline"
-          w="215px"
-          mb="20px"
-          _hover={{
-            bg: "#cdcdcd",
-            textColor: "#1e1e1e",
-          }}
-        >
-          Shopping Cart
-        </Button>
-      </Link>
-      <Link href="/project/cv-application">
-        <Button
-          borderColor="white"
-          textColor="white"
-          variant="outline"
-          w="215px"
-          mb="20px"
-          _hover={{
-            bg: "#cdcdcd",
-            textColor: "#1e1e1e",
-          }}
-        >
-          CV Generator
-        </Button>
-      </Link> */}
     </Grid>
   );
 }
