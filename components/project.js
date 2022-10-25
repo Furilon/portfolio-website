@@ -15,8 +15,6 @@ export default function Project({
         <Heading>{projectName}</Heading>
         <Image
           src={img}
-          // w={{ base: "356px", sm: "510", md: "1187", lg: "1780px" }}
-          // h={{ base: "273", sm: "390", md: "911", lg: "1366px" }}
           w="fill"
           h="auto"
           alt="Project Screenshot"
