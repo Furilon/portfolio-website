@@ -1,8 +1,12 @@
-import Link from "next/link";
 import PageLayout from "../components/layouts/page";
-import { Heading, Flex, Text, Image } from "@chakra-ui/react";
+import { Heading, Flex, Text, Image, Button, Link } from "@chakra-ui/react";
 import Section from "../components/section";
 import Experience from "../components/experience";
+import {
+  AiOutlineLinkedin,
+  AiOutlineMail,
+  AiOutlineGithub,
+} from "react-icons/ai";
 
 const EXPERIENCE_TEXT = {
   Pandora: ["Project Management using Trello", "Frontend", "Backend"],
@@ -16,8 +20,14 @@ export default function About() {
 
         {/* Wrapper for Who I Am section */}
         <Section>
-          <Flex direction="column" justify="center" align="center" my="20px">
-            <Heading as="h2" fontSize="1.6rem" mb="15px">
+          <Flex direction="column" justify="center" align="center" my="25px">
+            <Heading
+              as="h2"
+              fontSize="1.6rem"
+              mb="15px"
+              textDecoration="underline"
+              textDecorationColor="gray"
+            >
               Who I am
             </Heading>
             <Flex
@@ -47,9 +57,15 @@ export default function About() {
           </Flex>
         </Section>
 
+        {/* Wrapper for Experience section */}
         <Section>
-          <Flex direction="column" justify="center" align="center">
-            <Heading as="h2" fontSize="1.6rem">
+          <Flex direction="column" justify="center" align="center" my="25px">
+            <Heading
+              as="h2"
+              fontSize="1.6rem"
+              textDecoration="underline"
+              textDecorationColor="gray"
+            >
               Experience
             </Heading>
             <Flex direction="column" justify="center" align="center">
@@ -58,6 +74,65 @@ export default function About() {
                 date="April 2022 - Present"
                 pointsArr={EXPERIENCE_TEXT["Pandora"]}
               />
+            </Flex>
+          </Flex>
+        </Section>
+
+        <Section>
+          <Flex direction="column" justify="center" align="center" my="25px">
+            <Heading
+              as="h4"
+              fontSize="1.6rem"
+              textDecoration="underline"
+              textDecorationColor="gray"
+            >
+              Contact me
+            </Heading>
+            <Flex
+              direction={{ base: "column", md: "row" }}
+              justify="center"
+              align="center"
+              gap={{ base: "20px", md: "30px" }}
+              mt="20px"
+            >
+              <Link
+                href="https://www.linkedin.com/in/mykyta-medvediev/"
+                isExternal
+              >
+                <Button
+                  colorScheme="linkedin"
+                  leftIcon={<AiOutlineLinkedin />}
+                  size="lg"
+                >
+                  LinkedIn
+                </Button>
+              </Link>
+              <Link href="https://github.com/Furilon" isExternal>
+                <Button
+                  size="lg"
+                  leftIcon={<AiOutlineGithub />}
+                  textColor="#cdcdcd"
+                  border="1px"
+                  bg="none"
+                  borderColor="#cdcdcd"
+                  _hover={{ bg: "whiteAlpha.100" }}
+                >
+                  GitHub
+                </Button>
+              </Link>
+              <Link href="mailto:mykytamedvediev@gmail.com" isExternal>
+                <Button
+                  size="lg"
+                  leftIcon={<AiOutlineMail />}
+                  bg="whiteAlpha.800"
+                  textColor="#1e1e1e"
+                  _hover={{
+                    bg: "whiteAlpha.700",
+                  }}
+                >
+                  Email
+                </Button>
+              </Link>
             </Flex>
           </Flex>
         </Section>
