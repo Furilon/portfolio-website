@@ -1,0 +1,187 @@
+import { Grid, Link, Button } from "@chakra-ui/react";
+import GridProjectItem from "./gridProjectItem";
+
+const PROJECT_IMAGE = {
+  pandora: "/pandora.png",
+  "to-do-app": "/to-do-app.png",
+  "cv-application": "/cv-application.png",
+  "shopping-cart": "/shopping-cart.png",
+  "blog-user-frontend": "/blog-user-frontend.png",
+  "membership-club": "/membership-club.png",
+};
+
+const PROJECT_NAMES = {
+  pandora: "Project Pandora",
+  "to-do-app": "To-do Application",
+  "cv-application": "CV Generator",
+  "shopping-cart": "Shopping Cart",
+  "blog-user-frontend": "Blog",
+  "membership-club": "Membership Club",
+};
+
+const PROJECT_LINKS = {
+  pandora: "/project/pandora",
+  "to-do-app": "/project/to-do-app",
+  "cv-application": "/project/cv-application",
+  "shopping-cart": "/project/shopping-cart",
+  "blog-user-frontend": "/project/blog-user-frontend",
+  "membership-club": "/project/membership-club",
+};
+
+const PROJECT_TAGS = {
+  pandora: [],
+  "to-do-app": [],
+  "cv-application": [],
+  "shopping-cart": [],
+  "blog-user-frontend": [],
+  "membership-club": [],
+};
+
+const PROJECT_INFO = {
+  pandora: {
+    name: PROJECT_NAMES["pandora"],
+    projLink: PROJECT_LINKS["pandora"],
+    image: PROJECT_IMAGE["pandora"],
+    tags: PROJECT_TAGS["pandora"],
+  },
+  "to-do-app": {
+    name: PROJECT_NAMES["to-do-app"],
+    projLink: PROJECT_LINKS["to-do-app"],
+    image: PROJECT_IMAGE["to-do-app"],
+    tags: PROJECT_TAGS["to-do-app"],
+  },
+  "cv-application": {
+    name: PROJECT_NAMES["cv-application"],
+    projLink: PROJECT_LINKS["cv-application"],
+    image: PROJECT_IMAGE["cv-application"],
+    tags: PROJECT_TAGS["cv-application"],
+  },
+  "shopping-cart": {
+    name: PROJECT_NAMES["shopping-cart"],
+    projLink: PROJECT_LINKS["shopping-cart"],
+    image: PROJECT_IMAGE["shopping-cart"],
+    tags: PROJECT_TAGS["shopping-cart"],
+  },
+  "membership-club": {
+    name: PROJECT_NAMES["membership-club"],
+    projLink: PROJECT_LINKS["membership-club"],
+    image: PROJECT_IMAGE["membership-club"],
+    tags: PROJECT_TAGS["membership-club"],
+  },
+  "blog-user-frontend": {
+    name: PROJECT_NAMES["blog-user-frontend"],
+    projLink: PROJECT_LINKS["blog-user-frontend"],
+    image: PROJECT_IMAGE["blog-user-frontend"],
+    tags: PROJECT_TAGS["blog-user-frontend"],
+  },
+};
+
+export default function GridOfProjects() {
+  return (
+    <Grid
+      templateColumns="repeat(2, 1fr)"
+      templateRows="repeat(3, 1fr)"
+      gap={6}
+    >
+      {Object.keys(PROJECT_INFO).map((project) => (
+        <GridProjectItem
+          key={PROJECT_INFO[project].name}
+          link={PROJECT_INFO[project].projLink}
+          tags={PROJECT_INFO[project].tags}
+          projectName={PROJECT_INFO[project].name}
+          image={PROJECT_INFO[project].image}
+        />
+      ))}
+      {/* <Link href="/project/pandora">
+        <Button
+          borderColor="white"
+          textColor="white"
+          variant="outline"
+          w="215px"
+          mb="20px"
+          _hover={{
+            bg: "#cdcdcd",
+            textColor: "#1e1e1e",
+          }}
+        >
+          Pandora
+        </Button>
+      </Link>
+      <Link href="/project/to-do-app">
+        <Button
+          borderColor="white"
+          textColor="white"
+          variant="outline"
+          w="215px"
+          mb="20px"
+          _hover={{
+            bg: "#cdcdcd",
+            textColor: "#1e1e1e",
+          }}
+        >
+          To-do List
+        </Button>
+      </Link>
+      <Link href="/project/blog-user-frontend">
+        <Button
+          borderColor="white"
+          textColor="white"
+          variant="outline"
+          w="215px"
+          mb="20px"
+          _hover={{
+            bg: "#cdcdcd",
+            textColor: "#1e1e1e",
+          }}
+        >
+          Blog
+        </Button>
+      </Link>
+      <Link href="/project/membership-club">
+        <Button
+          borderColor="white"
+          textColor="white"
+          variant="outline"
+          w="215px"
+          mb="20px"
+          _hover={{
+            bg: "#cdcdcd",
+            textColor: "#1e1e1e",
+          }}
+        >
+          Membership Club Board
+        </Button>
+      </Link>
+      <Link href="/project/shopping-cart">
+        <Button
+          borderColor="white"
+          textColor="white"
+          variant="outline"
+          w="215px"
+          mb="20px"
+          _hover={{
+            bg: "#cdcdcd",
+            textColor: "#1e1e1e",
+          }}
+        >
+          Shopping Cart
+        </Button>
+      </Link>
+      <Link href="/project/cv-application">
+        <Button
+          borderColor="white"
+          textColor="white"
+          variant="outline"
+          w="215px"
+          mb="20px"
+          _hover={{
+            bg: "#cdcdcd",
+            textColor: "#1e1e1e",
+          }}
+        >
+          CV Generator
+        </Button>
+      </Link> */}
+    </Grid>
+  );
+}
