@@ -5,8 +5,8 @@ import GridOfProjects from "../components/gridOfProjects";
 
 export default function Works() {
   return (
-    <PageLayout title="Works - MM">
-      <Flex direction="column" justify="center" align="center">
+    <PageLayout title="Works">
+      <Flex direction="column" justify="center" align="center" mb="20px">
         <Heading as="h1" textAlign="center" mb="30px">
           Projects
         </Heading>
