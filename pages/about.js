@@ -44,10 +44,7 @@ export default function About() {
                 mb={{ base: "20px", md: "none" }}
                 borderRadius="10px"
               />
-              <Text
-                w={{ base: "341px", lg: "569px" }}
-                h={{ base: "375px", lg: "625px" }}
-              >
+              <Text w={{ base: "341px", lg: "569px" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
                 autem laboriosam eum iusto nam nulla quis aliquam harum
                 necessitatibus, adipisci eligendi, magnam deserunt rem incidunt
