@@ -29,12 +29,12 @@ const PROJECT_LINKS = {
 };
 
 const PROJECT_TAGS = {
-  pandora: ["next.js", "react", "chakra-ui", "eslint"],
+  pandora: ["next.js", "react", "chakra", "mongodb", "auth"],
   "to-do-app": ["vanilla js", "IIFE", "factory funcs", "css"],
   "cv-application": ["react", "useState"],
   "shopping-cart": ["react", "react-router-dom", "useState"],
-  "blog-user-frontend": ["express", "ejs", "react", "heroku", "API"],
-  "membership-club": ["passport", "authentication", "express", "heroku"],
+  "blog-user-frontend": ["express", "react", "heroku", "API", "mongodb"],
+  "membership-club": ["passport", "express", "heroku", "mongodb"],
 };
 
 const PROJECT_INFO = {
