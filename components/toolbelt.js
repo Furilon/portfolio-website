@@ -279,7 +279,7 @@ export function Learning() {
   return (
     <Grid templateColumns="repeat(3, 1fr)" gap={5}>
       <Tooltip
-        label="Formik"
+        label="Redux"
         hasArrow
         bg="white"
         borderRadius="10px"
@@ -293,7 +293,7 @@ export function Learning() {
         />
       </Tooltip>
       <Tooltip
-        label="Formik"
+        label="Typescript"
         hasArrow
         bg="white"
         borderRadius="10px"
@@ -303,12 +303,12 @@ export function Learning() {
           as={Image}
           boxSize="75px"
           src="/images/typescript-icon.svg"
-          alt="TypeScript"
+          alt="Typescript"
           borderRadius="20px"
         />
       </Tooltip>
       <Tooltip
-        label="Formik"
+        label="GraphQL"
         hasArrow
         bg="white"
         borderRadius="10px"

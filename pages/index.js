@@ -5,11 +5,9 @@ import {
   Heading,
   Button,
   Link,
-  Text,
   Flex,
   UnorderedList,
   ListItem,
-  Divider,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import { Toolbelt, Learning } from "../components/toolbelt";
