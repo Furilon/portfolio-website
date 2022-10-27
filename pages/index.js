@@ -7,6 +7,9 @@ import {
   Link,
   Text,
   Flex,
+  UnorderedList,
+  ListItem,
+  Divider,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import { ChevronRightIcon } from "@chakra-ui/icons";
@@ -30,19 +33,46 @@ export default function Index() {
         </Box>
 
         <Box display={{ md: "flex" }}>
-          <Box flexGrow={1}>
+          <Flex flexGrow={1} direction="column">
+            <Heading
+              as="h1"
+              textColor="white"
+              textAlign="center"
+              fontWeight="normal"
+              fontSize="1.5rem"
+              fontStyle="italic"
+            >
+              my name is
+            </Heading>
             <Heading as="h1" textColor="white" textAlign="center">
               Mykyta Medvediev
             </Heading>
-          </Box>
+            <Divider mt={4} />
+          </Flex>
         </Box>
-        <Section delay={0.1}>
-          <Heading textColor="white" textAlign="center">
-            Index
-          </Heading>
-          <Text as="p" textColor="white">
-            Paragraph
-          </Text>
+
+        <Section delay={0.5}>
+          <UnorderedList my={6}>
+            <ListItem>
+              I&apos;m currently a senior Business Administration student at UC
+              Irvine
+            </ListItem>
+            <ListItem>
+              I&apos;m interested in full-stack web development.
+            </ListItem>
+            <ListItem>
+              I&apos;m looking for a full-time junior front-end developer
+              position
+            </ListItem>
+            <ListItem>
+              My contact information is at the bottom of my{" "}
+              <Link href="/about#contacts">about</Link> page
+            </ListItem>
+          </UnorderedList>
+          <Divider />
+        </Section>
+
+        <Section delay={1}>
           <Flex direction="column" justify="center" align="center" my={4}>
             <NextLink href="/works">
               <Button
