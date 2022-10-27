@@ -78,6 +78,7 @@ export default function About() {
         <Section>
           <Flex direction="column" justify="center" align="center" my="25px">
             <Heading
+              id="contacts"
               as="h4"
               fontSize="1.6rem"
               textDecoration="underline"
