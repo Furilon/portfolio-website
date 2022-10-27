@@ -59,14 +59,14 @@ export default function Index() {
           <UnorderedList my={6}>
             <ListItem>
               I&apos;m currently a senior Business Administration student at UC
-              Irvine
+              Irvine.
             </ListItem>
             <ListItem>
               I&apos;m interested in full-stack web development.
             </ListItem>
             <ListItem>
               I&apos;m looking for a full-time junior front-end developer
-              position
+              position.
             </ListItem>
             <ListItem>
               My contact information is at the bottom of my{" "}
@@ -81,7 +81,22 @@ export default function Index() {
               >
                 about
               </Link>{" "}
-              page
+              page.
+            </ListItem>
+            <ListItem>
+              View my works on the{" "}
+              <Link
+                href="/works"
+                textDecoration="underline"
+                textDecorationColor="gray"
+                fontWeight="bold"
+                _hover={{
+                  textColor: "gray",
+                }}
+              >
+                projects
+              </Link>{" "}
+              page.
             </ListItem>
           </UnorderedList>
         </Section>
