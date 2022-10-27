@@ -134,7 +134,13 @@ export default function Index() {
         </Section>
 
         <Section delay={2}>
-          <Flex direction="column" justify="center" align="center" my={4}>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            justify="center"
+            align="center"
+            gap="20px"
+            my={10}
+          >
             <NextLink href="/works">
               <Button
                 rightIcon={<ChevronRightIcon />}
@@ -142,7 +148,6 @@ export default function Index() {
                 textColor="white"
                 variant="outline"
                 w="175px"
-                mb="20px"
                 _hover={{
                   bg: "#cdcdcd",
                   textColor: "#1e1e1e",
@@ -158,7 +163,6 @@ export default function Index() {
                 textColor="white"
                 variant="outline"
                 w="175px"
-                mb="20px"
                 _hover={{
                   bg: "#cdcdcd",
                   textColor: "#1e1e1e",
