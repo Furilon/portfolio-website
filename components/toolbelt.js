@@ -35,7 +35,7 @@ export function Toolbelt() {
 
 export function Learning() {
   return (
-    <Grid templateColumns="repeat(3, 1fr)">
+    <Grid templateColumns="repeat(3, 1fr)" gap={5}>
       <GridItem as={Image} boxSize="75px" src="/images/redux.svg" />
       <GridItem as={Image} boxSize="75px" src="/images/typescript-icon.svg" />
       <GridItem as={Image} boxSize="75px" src="/images/graphql.svg" />
