@@ -1,5 +1,13 @@
 import PageLayout from "../components/layouts/page";
-import { Heading, Flex, Text, Image, Button, Link } from "@chakra-ui/react";
+import {
+  Heading,
+  Flex,
+  Text,
+  Image,
+  Button,
+  Link,
+  Tooltip,
+} from "@chakra-ui/react";
 import Section from "../components/section";
 import Experience from "../components/experience";
 import {
@@ -38,17 +46,59 @@ export default function About() {
               <Image
                 src="/Mykyta.jpg"
                 alt="Mykyta Medvediev's picture"
-                w={{ base: "341px", lg: "569px" }}
-                h={{ base: "375px", lg: "625px" }}
+                w={{ base: "341px", lg: "426px" }}
+                h={{ base: "375px", lg: "469px" }}
                 mr={{ base: "none", md: "20px" }}
                 mb={{ base: "20px", md: "none" }}
                 borderRadius="10px"
               />
-              <Text w={{ base: "341px", lg: "569px" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-                autem laboriosam eum iusto nam nulla quis aliquam harum
-                necessitatibus, adipisci eligendi, magnam deserunt rem incidunt
-                ullam hic repudiandae. Magnam, officia.
+              <Text w={{ base: "341px", lg: "426px" }}>
+                My name is{" "}
+                <Tooltip
+                  hasArrow
+                  label="(mee-kee-ta)"
+                  bg="white"
+                  textColor="#1e1e1e"
+                  borderRadius="10px"
+                  fontStyle="italic"
+                >
+                  <Text
+                    as="span"
+                    textDecoration="underline"
+                    textDecorationColor="gray"
+                    fontWeight="bold"
+                  >
+                    Mykyta
+                  </Text>
+                </Tooltip>
+                , I&apos;m a senior Business Administration major at UC Irvine
+                and a self-taught{" "}
+                <Text as="span" fontWeight="bold">
+                  full-stack web developer
+                </Text>
+                . I aspire to build products and services that will positively
+                affect people’s lives. For the past 6 months, I&apos;ve been
+                working on{" "}
+                <Link
+                  href="https://theprojectpandora.com"
+                  textDecoration="underline"
+                  textDecorationColor="gray"
+                  fontWeight="bold"
+                >
+                  Project Pandora
+                </Link>{" "}
+                (about which you can read{" "}
+                <Link
+                  href="/project/pandora"
+                  textDecoration="underline"
+                  textDecorationColor="gray"
+                  fontWeight="bold"
+                >
+                  here
+                </Link>
+                ), while also learning new technologies. I love problem-solving
+                and I adore the creative process that comes along with it. In my
+                free time, I play basketball and read books.
               </Text>
             </Flex>
           </Flex>
@@ -75,6 +125,7 @@ export default function About() {
           </Flex>
         </Section>
 
+        {/* Wrapper for Contact me section */}
         <Section delay={1.5}>
           <Flex direction="column" justify="center" align="center" my="25px">
             <Heading
