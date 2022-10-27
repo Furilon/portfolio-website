@@ -19,7 +19,7 @@ export default function About() {
         <Heading as="h1">About me</Heading>
 
         {/* Wrapper for Who I Am section */}
-        <Section>
+        <Section delay={0.5}>
           <Flex direction="column" justify="center" align="center" my="25px">
             <Heading
               as="h2"
@@ -55,7 +55,7 @@ export default function About() {
         </Section>
 
         {/* Wrapper for Experience section */}
-        <Section>
+        <Section delay={1}>
           <Flex direction="column" justify="center" align="center" my="25px">
             <Heading
               as="h2"
@@ -75,7 +75,7 @@ export default function About() {
           </Flex>
         </Section>
 
-        <Section>
+        <Section delay={1.5}>
           <Flex direction="column" justify="center" align="center" my="25px">
             <Heading
               id="contacts"
