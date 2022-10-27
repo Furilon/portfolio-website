@@ -100,6 +100,7 @@ export default function About() {
                   colorScheme="linkedin"
                   leftIcon={<AiOutlineLinkedin />}
                   size="lg"
+                  w="150px"
                 >
                   LinkedIn
                 </Button>
@@ -112,6 +113,7 @@ export default function About() {
                   border="1px"
                   bg="none"
                   borderColor="#cdcdcd"
+                  w="150px"
                   _hover={{ bg: "whiteAlpha.100" }}
                 >
                   GitHub
@@ -123,6 +125,7 @@ export default function About() {
                   leftIcon={<AiOutlineMail />}
                   bg="whiteAlpha.800"
                   textColor="#1e1e1e"
+                  w="150px"
                   _hover={{
                     bg: "whiteAlpha.700",
                   }}
