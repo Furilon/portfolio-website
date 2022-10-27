@@ -12,6 +12,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Section from "../components/section";
+import { Toolbelt, Learning } from "../components/toolbelt";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 
 import PageLayout from "../components/layouts/page";
@@ -73,6 +74,22 @@ export default function Index() {
         </Section>
 
         <Section delay={1}>
+          <Heading as="h2" fontSize="1.8rem">
+            My development toolkit
+          </Heading>
+          <Toolbelt />
+          <Divider />
+        </Section>
+
+        <Section delay={1.5}>
+          <Heading as="h2" fontSize="1.8rem">
+            Currently learning
+          </Heading>
+          <Learning />
+          <Divider />
+        </Section>
+
+        <Section delay={2}>
           <Flex direction="column" justify="center" align="center" my={4}>
             <NextLink href="/works">
               <Button
