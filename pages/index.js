@@ -45,10 +45,15 @@ export default function Index() {
             >
               my name is
             </Heading>
-            <Heading as="h1" textColor="white" textAlign="center">
+            <Heading
+              as="h1"
+              textColor="white"
+              textAlign="center"
+              textDecoration="underline"
+              textDecorationColor="gray"
+            >
               Mykyta Medvediev
             </Heading>
-            <Divider mt={4} />
           </Flex>
         </Box>
 
@@ -70,23 +75,38 @@ export default function Index() {
               <Link href="/about#contacts">about</Link> page
             </ListItem>
           </UnorderedList>
-          <Divider />
         </Section>
 
         <Section delay={1}>
-          <Heading as="h2" fontSize="1.8rem">
-            My development toolkit
-          </Heading>
-          <Toolbelt />
-          <Divider />
+          <Flex direction="column" justify="center" align="center" my={10}>
+            <Heading
+              as="h2"
+              fontSize="1.8rem"
+              mb={4}
+              textDecoration="underline"
+              textDecorationColor="gray"
+              textAlign="center"
+            >
+              My development toolkit
+            </Heading>
+            <Toolbelt />
+          </Flex>
         </Section>
 
         <Section delay={1.5}>
-          <Heading as="h2" fontSize="1.8rem">
-            Currently learning
-          </Heading>
-          <Learning />
-          <Divider />
+          <Flex direction="column" justify="center" align="center" my={10}>
+            <Heading
+              as="h2"
+              fontSize="1.8rem"
+              mb={4}
+              textDecoration="underline"
+              textDecorationColor="gray"
+              textAlign="center"
+            >
+              Currently learning
+            </Heading>
+            <Learning />
+          </Flex>
         </Section>
 
         <Section delay={2}>
