@@ -70,7 +70,18 @@ export default function Index() {
             </ListItem>
             <ListItem>
               My contact information is at the bottom of my{" "}
-              <Link href="/about#contacts">about</Link> page
+              <Link
+                href="/about#contacts"
+                textDecoration="underline"
+                textDecorationColor="gray"
+                fontWeight="bold"
+                _hover={{
+                  textColor: "gray",
+                }}
+              >
+                about
+              </Link>{" "}
+              page
             </ListItem>
           </UnorderedList>
         </Section>
