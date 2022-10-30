@@ -1,11 +1,16 @@
 import { Flex, Text, Heading, UnorderedList, ListItem } from "@chakra-ui/react";
 
-export default function Experience({ name, date, pointsArr }) {
+export default function Experience({ role, name, date, pointsArr }) {
   return (
     <Flex direction="column" justify="center" align="center" mt="20px">
-      <Heading as="h4" fontSize="1.2rem" fontStyle="italic" fontWeight="normal">
-        {name}
-      </Heading>
+      <Flex direction="column" justify="center" align="center">
+        <Heading as="h4" fontSize="1.2rem" fontStyle="italic">
+          {name}
+        </Heading>
+        <Heading as="h4" fontSize="1rem" fontStyle="italic" fontWeight="normal">
+          {role}
+        </Heading>
+      </Flex>
       <Flex
         justify="center"
         align={{ base: "center", md: "flex-start" }}
