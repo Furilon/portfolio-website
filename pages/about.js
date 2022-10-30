@@ -27,6 +27,13 @@ const EXPERIENCE_TEXT = {
     "Wrote the initial Python course",
     "Provided stategic vision for the whole project",
   ],
+  walmart: [
+    "Always appeared on time",
+    "Operated cash register and scanned customers' items in a fast-paced environment",
+    "Received payment from customers via card payment, check, or cash",
+    "Provided change on items sold to cash customers",
+    "Ensured clean and safe working environment",
+  ],
 };
 
 export default function About() {
@@ -127,9 +134,16 @@ export default function About() {
             <Flex direction="column" justify="center" align="center">
               <Experience
                 role="Founder"
-                name={"Project Pandora"}
-                date="April 2022 - Present"
+                name="Project Pandora"
+                date="Apr 2022 - Present"
                 pointsArr={EXPERIENCE_TEXT["pandora"]}
+              />
+
+              <Experience
+                role="Cashier"
+                name="Walmart"
+                date="Jan 2021 - Mar 2021"
+                pointsArr={EXPERIENCE_TEXT["walmart"]}
               />
             </Flex>
           </Flex>
