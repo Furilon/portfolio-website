@@ -17,7 +17,16 @@ import {
 } from "react-icons/ai";
 
 const EXPERIENCE_TEXT = {
-  Pandora: ["Project Management using Trello", "Frontend", "Backend"],
+  pandora: [
+    "Set up a project management system that utilizes Trello",
+    "Wrote and maintained custom React components",
+    "Created and maintained MongoDB database and models",
+    "Migrated the app from React client and Express server to NextJS framework",
+    "Set up API endpoints and utility functions to access them",
+    "Set up and modified Next-Auth authentication system",
+    "Wrote the initial Python course",
+    "Provided stategic vision for the whole project",
+  ],
 };
 
 export default function About() {
@@ -117,9 +126,10 @@ export default function About() {
             </Heading>
             <Flex direction="column" justify="center" align="center">
               <Experience
+                role="Founder"
                 name={"Project Pandora"}
                 date="April 2022 - Present"
-                pointsArr={EXPERIENCE_TEXT["Pandora"]}
+                pointsArr={EXPERIENCE_TEXT["pandora"]}
               />
             </Flex>
           </Flex>
