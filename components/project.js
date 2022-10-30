@@ -8,9 +8,12 @@ export default function Project({
   liveLink,
   img,
   description,
+  problems,
+  solution,
 }) {
   return (
     <Flex direction="column">
+      {/* Wrapper for Image */}
       <Flex direction="column" justify="center" align="center">
         <Heading>{projectName}</Heading>
         <Image
@@ -25,6 +28,8 @@ export default function Project({
           mt="10px"
         />
       </Flex>
+
+      {/* Wrapper for buttons */}
       <Flex justify="center" align="center" gap="20px" mt="10px" mb="20px">
         <Link href={ghLink} isExternal>
           <Button
@@ -48,7 +53,18 @@ export default function Project({
           </Button>
         </Link>
       </Flex>
-      <Text>{description}</Text>
+
+      {/* Wrapper for text */}
+      <Flex direction="column" justify="center" align="center">
+        <Heading>Description</Heading>
+        <Text>{description}</Text>
+
+        <Heading mt={6}>Problems Faced</Heading>
+        <Text>{problems}</Text>
+
+        <Heading mt={6}>What I did</Heading>
+        <Text mb={10}>{solution}</Text>
+      </Flex>
     </Flex>
   );
 }
