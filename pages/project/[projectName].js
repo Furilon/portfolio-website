@@ -1,12 +1,5 @@
 import Project from "../../components/project";
 import PageLayout from "../../components/layouts/page";
-import TodoImg from "../../public/to-do-app.png";
-import PandoraImg from "../../public/pandora.png";
-import CvAppImg from "../../public/cv-application.png";
-import ShopCartImg from "../../public/shopping-cart.png";
-import MembershipImg from "../../public/membership-club.png";
-import BlogImg from "../../public/blog-user-frontend.png";
-import { Flex, Heading, Text, Image, chakra } from "@chakra-ui/react";
 
 const LIVE_LINKS = {
   pandora: "https://theprojectpandora.com",
@@ -50,6 +43,26 @@ const PROJECT_NAMES = {
   "membership-club": "Membership Club",
 };
 
+const PROJECT_PROBLEMS = {
+  pandora:
+    "This is my first serious production-ready full-stack project, and there were (and still are) many problems along the way. The first issue we faced is building a React application (SPA) and connecting it to Express server. I quickly realized that we want to have many pages, and that if we only have an SPA, then a page won't load unless it's a homepage, which makes link sharing impossible and hinders SEO. The second problem was team management: we have a team of two, and I'm the 'visionary' in it, so I have to make all of the strategic decisions alongside project management. The third problem was about making lesson page creation scalable: since we are planning to have a big number of lessons, it's a big hassle to create a page for each lesson. The way I dealt with those problems is outlined below.",
+  "to-do-app": "To-do Application",
+  "cv-application": "CV Generator",
+  "shopping-cart": "Shopping Cart",
+  "blog-user-frontend": "Blog",
+  "membership-club": "Membership Club",
+};
+
+const PROJECT_SOLUTIONS = {
+  pandora:
+    "To solve the issue of connecting the server with the client, we initially tried to set up a hybrid solution that hydrates the React page on the server and sends it to the client as a ready HTML page (Server-Side Rendering), but it was overly complicated from the architectural standpoint, full of hydration bugs, and very unoptimized. So, I made a decision to switch to NextJS, that solved all backend problems, provided much more pleasant developer experience, and lets us easily choose between SSR and CSR. To solve the team management issue, I set up a Trello app with three boards: to-do, in-process, and done. For each task, we create a card and assign labels that indicate urgency/importance, come up with weekly due dates, and delegate tasks. It allowed us to visualize what tasks are important and prioritize them, to track who's responsible for what, and spread what's needed to do among the team. The last problem is the most interesting one. We want to write lessons in Markdown, so we needed to agree on a convention for the structure of those lessons, after which we designed an algorithm to recursively search through the 'lessons' folder, parse the text, and put it into our components.",
+  "to-do-app": "To-do Application",
+  "cv-application": "CV Generator",
+  "shopping-cart": "Shopping Cart",
+  "blog-user-frontend": "Blog",
+  "membership-club": "Membership Club",
+};
+
 export async function getStaticPaths() {
   return {
     paths: [
@@ -70,6 +83,8 @@ export async function getStaticProps({ params }) {
   const liveLink = LIVE_LINKS[params.projectName];
   const description = DESCRIPTIONS[params.projectName];
   const projectName = PROJECT_NAMES[params.projectName];
+  const problems = PROJECT_PROBLEMS[params.projectName];
+  const solution = PROJECT_SOLUTIONS[params.projectName];
 
   return {
     props: {
@@ -78,6 +93,8 @@ export async function getStaticProps({ params }) {
       ghLink,
       liveLink,
       description,
+      problems,
+      solution,
     },
   };
 }
@@ -88,6 +105,8 @@ export default function Page({
   ghLink,
   liveLink,
   description,
+  problems,
+  solution,
 }) {
   return (
     <PageLayout title="Project">
@@ -97,6 +116,8 @@ export default function Page({
         ghLink={ghLink}
         liveLink={liveLink}
         description={description}
+        problems={problems}
+        solution={solution}
       />
     </PageLayout>
   );
