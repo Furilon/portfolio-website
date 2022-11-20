@@ -2,7 +2,7 @@ import { Grid, Link, Button } from "@chakra-ui/react";
 import GridProjectItem from "./gridProjectItem";
 
 const PROJECT_IMAGE = {
-  pandora: "/pandora.png",
+  vennbury: "/vennbury.png",
   "to-do-app": "/to-do-app.png",
   "cv-application": "/cv-application.png",
   "shopping-cart": "/shopping-cart.png",
@@ -11,7 +11,7 @@ const PROJECT_IMAGE = {
 };
 
 const PROJECT_NAMES = {
-  pandora: "Project Pandora",
+  vennbury: "Vennbury University",
   "to-do-app": "To-do Application",
   "cv-application": "CV Generator",
   "shopping-cart": "Shopping Cart",
@@ -20,7 +20,7 @@ const PROJECT_NAMES = {
 };
 
 const PROJECT_LINKS = {
-  pandora: "/project/pandora",
+  vennbury: "/project/vennbury",
   "to-do-app": "/project/to-do-app",
   "cv-application": "/project/cv-application",
   "shopping-cart": "/project/shopping-cart",
@@ -29,7 +29,7 @@ const PROJECT_LINKS = {
 };
 
 const PROJECT_TAGS = {
-  pandora: ["next.js", "react", "chakra", "mongodb", "auth"],
+  vennbury: ["next.js", "react", "chakra", "mongodb", "auth"],
   "to-do-app": ["vanilla js", "IIFE", "factory funcs", "css"],
   "cv-application": ["react", "useState"],
   "shopping-cart": ["react", "react-router-dom", "useState"],
@@ -38,29 +38,17 @@ const PROJECT_TAGS = {
 };
 
 const PROJECT_INFO = {
-  pandora: {
-    name: PROJECT_NAMES["pandora"],
-    projLink: PROJECT_LINKS["pandora"],
-    image: PROJECT_IMAGE["pandora"],
-    tags: PROJECT_TAGS["pandora"],
+  vennbury: {
+    name: PROJECT_NAMES["vennbury"],
+    projLink: PROJECT_LINKS["vennbury"],
+    image: PROJECT_IMAGE["vennbury"],
+    tags: PROJECT_TAGS["vennbury"],
   },
-  "to-do-app": {
-    name: PROJECT_NAMES["to-do-app"],
-    projLink: PROJECT_LINKS["to-do-app"],
-    image: PROJECT_IMAGE["to-do-app"],
-    tags: PROJECT_TAGS["to-do-app"],
-  },
-  "cv-application": {
-    name: PROJECT_NAMES["cv-application"],
-    projLink: PROJECT_LINKS["cv-application"],
-    image: PROJECT_IMAGE["cv-application"],
-    tags: PROJECT_TAGS["cv-application"],
-  },
-  "shopping-cart": {
-    name: PROJECT_NAMES["shopping-cart"],
-    projLink: PROJECT_LINKS["shopping-cart"],
-    image: PROJECT_IMAGE["shopping-cart"],
-    tags: PROJECT_TAGS["shopping-cart"],
+  "blog-user-frontend": {
+    name: PROJECT_NAMES["blog-user-frontend"],
+    projLink: PROJECT_LINKS["blog-user-frontend"],
+    image: PROJECT_IMAGE["blog-user-frontend"],
+    tags: PROJECT_TAGS["blog-user-frontend"],
   },
   "membership-club": {
     name: PROJECT_NAMES["membership-club"],
@@ -68,11 +56,23 @@ const PROJECT_INFO = {
     image: PROJECT_IMAGE["membership-club"],
     tags: PROJECT_TAGS["membership-club"],
   },
-  "blog-user-frontend": {
-    name: PROJECT_NAMES["blog-user-frontend"],
-    projLink: PROJECT_LINKS["blog-user-frontend"],
-    image: PROJECT_IMAGE["blog-user-frontend"],
-    tags: PROJECT_TAGS["blog-user-frontend"],
+  "shopping-cart": {
+    name: PROJECT_NAMES["shopping-cart"],
+    projLink: PROJECT_LINKS["shopping-cart"],
+    image: PROJECT_IMAGE["shopping-cart"],
+    tags: PROJECT_TAGS["shopping-cart"],
+  },
+  "cv-application": {
+    name: PROJECT_NAMES["cv-application"],
+    projLink: PROJECT_LINKS["cv-application"],
+    image: PROJECT_IMAGE["cv-application"],
+    tags: PROJECT_TAGS["cv-application"],
+  },
+  "to-do-app": {
+    name: PROJECT_NAMES["to-do-app"],
+    projLink: PROJECT_LINKS["to-do-app"],
+    image: PROJECT_IMAGE["to-do-app"],
+    tags: PROJECT_TAGS["to-do-app"],
   },
 };
 
