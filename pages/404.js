@@ -5,7 +5,7 @@ export default function Error404() {
   return (
     <PageLayout>
       <Flex direction="column" justify="center" align="center">
-        <Heading>404 - Page doesn't exist</Heading>
+        <Heading>404 - Page does not exist</Heading>
       </Flex>
     </PageLayout>
   );
