@@ -93,19 +93,19 @@ export default function About() {
                   full-stack web developer
                 </Text>
                 . I aspire to build products and services that will positively
-                affect people’s lives. For the past 6 months, I&apos;ve been
+                affect people’s lives. For the past year, I&apos;ve been
                 working on{" "}
                 <Link
-                  href="https://theprojectpandora.com"
+                  href="https://vennbury.com"
                   textDecoration="underline"
                   textDecorationColor="gray"
                   fontWeight="bold"
                 >
-                  Project Pandora
+                  Vennbury University
                 </Link>{" "}
                 (about which you can read{" "}
                 <Link
-                  href="/project/pandora"
+                  href="/project/vennbury"
                   textDecoration="underline"
                   textDecorationColor="gray"
                   fontWeight="bold"
@@ -133,8 +133,8 @@ export default function About() {
             </Heading>
             <Flex direction="column" justify="center" align="center">
               <Experience
-                role="Founder"
-                name="Project Pandora"
+                role="Software Engineer"
+                name="Vennbury University"
                 date="Apr 2022 - Present"
                 pointsArr={EXPERIENCE_TEXT["pandora"]}
               />
