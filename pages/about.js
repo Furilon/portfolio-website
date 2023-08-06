@@ -18,14 +18,12 @@ import {
 
 const EXPERIENCE_TEXT = {
   pandora: [
-    "Set up a project management system that utilizes Trello",
-    "Wrote and maintained custom React components",
-    "Created and maintained MongoDB database and models",
-    "Migrated the app from React client and Express server to NextJS framework",
-    "Set up API endpoints and utility functions to access them",
-    "Set up and modified Next-Auth authentication system",
-    "Wrote the initial Python course",
-    "Provided stategic vision for the whole project",
+    "Improved website’s SEO by 46% by using semantic HTML and optimized components.",
+    "Migrated the app to Next.js, thereby decreasing TTFB by 28%.",
+    "Decreased authentication time by 5 seconds by optimizing MongoDB queries.",
+    "Integrated headless CMS API, improving the website’s loading time by 15%.",
+    "Developed NodeJS-based API endpoints and utility functions to access them.",
+    "Wrote the initial Python course, used by more than 300 students.",
   ],
   walmart: [
     "Always appeared on time",
