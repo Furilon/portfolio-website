@@ -271,13 +271,7 @@ export function Toolbelt() {
           borderRadius="20px"
         />
       </Tooltip>
-    </Grid>
-  );
-}
 
-export function Learning() {
-  return (
-    <Grid templateColumns="repeat(3, 1fr)" gap={5}>
       <Tooltip
         label="Redux"
         hasArrow
@@ -320,6 +314,37 @@ export function Learning() {
           src="/images/graphql.svg"
           alt="GraphQL"
         />
+      </Tooltip>
+    </Grid>
+  );
+}
+
+export function Learning() {
+  return (
+    <Grid templateColumns="repeat(3, 1fr)" gap={5}>
+      <Tooltip
+        label="Salesforce"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/salesforce.svg"
+          alt="Salesforce"
+        />
+      </Tooltip>
+
+      <Tooltip
+        label="Java"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem as={Image} boxSize="75px" src="/images/java.svg" alt="Java" />
       </Tooltip>
     </Grid>
   );
