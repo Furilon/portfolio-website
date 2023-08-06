@@ -57,6 +57,22 @@ export function Toolbelt() {
           borderRadius="20px"
         />
       </Tooltip>
+
+      <Tooltip
+        label="Typescript"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/typescript-icon.svg"
+          alt="Typescript"
+          borderRadius="20px"
+        />
+      </Tooltip>
       <Tooltip
         label="ReactJS"
         hasArrow
@@ -71,6 +87,38 @@ export function Toolbelt() {
           alt="React"
         />
       </Tooltip>
+
+      <Tooltip
+        label="Redux"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/redux.svg"
+          alt="Redux"
+        />
+      </Tooltip>
+
+      <Tooltip
+        label="Formik"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/formik.svg"
+          alt="Formik"
+          borderRadius="20px"
+        />
+      </Tooltip>
+
       <Tooltip
         label="NodeJS"
         hasArrow
@@ -99,6 +147,74 @@ export function Toolbelt() {
           alt="ExpressJS"
         />
       </Tooltip>
+
+      <Tooltip
+        label="NextJS"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          bg="white"
+          borderRadius="full"
+          src="/images/nextjs.svg"
+          alt="NextJS"
+        />
+      </Tooltip>
+
+      <Tooltip
+        label="Less"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem as={Image} boxSize="75px" src="/images/less.svg" alt="Less" />
+      </Tooltip>
+
+      <Tooltip
+        label="Sass"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem as={Image} boxSize="75px" src="/images/sass.svg" alt="Sass" />
+      </Tooltip>
+
+      <Tooltip
+        label="Tailwind CSS"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/tailwindcss-icon.svg"
+          alt="Tailwind CSS"
+        />
+      </Tooltip>
+
+      <Tooltip
+        label="Socket.io"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/socketio.svg"
+          alt="Socket.io"
+        />
+      </Tooltip>
+
       <Tooltip
         label="MongoDB"
         hasArrow
@@ -116,62 +232,7 @@ export function Toolbelt() {
           borderRadius="20px"
         />
       </Tooltip>
-      <Tooltip
-        label="Tailwind CSS"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/tailwindcss-icon.svg"
-          alt="Tailwind CSS"
-        />
-      </Tooltip>
-      <Tooltip
-        label="Webpack"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/webpack.svg"
-          alt="Webpack"
-        />
-      </Tooltip>
-      <Tooltip
-        label="Eslist"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/eslint.svg"
-          alt="Eslint"
-        />
-      </Tooltip>
-      <Tooltip
-        label="Git"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/git-icon.svg"
-          alt="Git"
-        />
-      </Tooltip>
+
       <Tooltip
         label="Python"
         hasArrow
@@ -184,135 +245,6 @@ export function Toolbelt() {
           boxSize="75px"
           src="/images/python.svg"
           alt="Python"
-        />
-      </Tooltip>
-      <Tooltip
-        label="VS Code"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/visual-studio-code.svg"
-          alt="VS Code"
-        />
-      </Tooltip>
-      <Tooltip
-        label="NextJS"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          bg="white"
-          borderRadius="full"
-          src="/images/nextjs.svg"
-          alt="NextJS"
-        />
-      </Tooltip>
-      <Tooltip
-        label="Heroku"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/heroku-icon.svg"
-          alt="Heroku"
-          bg="white"
-          padding="5px"
-          borderRadius="15px"
-        />
-      </Tooltip>
-      <Tooltip
-        label="Firebase"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/firebase.svg"
-          alt="Firebase"
-        />
-      </Tooltip>
-      <Tooltip
-        label="Jest"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem as={Image} boxSize="75px" src="/images/jest.svg" alt="Jest" />
-      </Tooltip>
-      <Tooltip
-        label="Formik"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/formik.svg"
-          alt="Formik"
-          borderRadius="20px"
-        />
-      </Tooltip>
-
-      <Tooltip
-        label="Redux"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/redux.svg"
-          alt="Redux"
-        />
-      </Tooltip>
-      <Tooltip
-        label="Typescript"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/typescript-icon.svg"
-          alt="Typescript"
-          borderRadius="20px"
-        />
-      </Tooltip>
-      <Tooltip
-        label="GraphQL"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/graphql.svg"
-          alt="GraphQL"
         />
       </Tooltip>
 
@@ -347,27 +279,17 @@ export function Toolbelt() {
       </Tooltip>
 
       <Tooltip
-        label="Less"
+        label="Jest"
         hasArrow
         bg="white"
         borderRadius="10px"
         textColor="#1e1e1e"
       >
-        <GridItem as={Image} boxSize="75px" src="/images/less.svg" alt="Less" />
+        <GridItem as={Image} boxSize="75px" src="/images/jest.svg" alt="Jest" />
       </Tooltip>
 
       <Tooltip
-        label="Sass"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem as={Image} boxSize="75px" src="/images/sass.svg" alt="Sass" />
-      </Tooltip>
-
-      <Tooltip
-        label="Flask"
+        label="GraphQL"
         hasArrow
         bg="white"
         borderRadius="10px"
@@ -376,8 +298,8 @@ export function Toolbelt() {
         <GridItem
           as={Image}
           boxSize="75px"
-          src="/images/flask.svg"
-          alt="Flask"
+          src="/images/graphql.svg"
+          alt="GraphQL"
         />
       </Tooltip>
 
@@ -397,21 +319,6 @@ export function Toolbelt() {
       </Tooltip>
 
       <Tooltip
-        label="Socket.io"
-        hasArrow
-        bg="white"
-        borderRadius="10px"
-        textColor="#1e1e1e"
-      >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/socketio.svg"
-          alt="Socket.io"
-        />
-      </Tooltip>
-
-      <Tooltip
         label="SQLite"
         hasArrow
         bg="white"
@@ -423,6 +330,96 @@ export function Toolbelt() {
           boxSize="75px"
           src="/images/sqlite.svg"
           alt="SQLite"
+        />
+      </Tooltip>
+
+      <Tooltip
+        label="Heroku"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/heroku-icon.svg"
+          alt="Heroku"
+          bg="white"
+          padding="5px"
+          borderRadius="15px"
+        />
+      </Tooltip>
+      <Tooltip
+        label="Firebase"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/firebase.svg"
+          alt="Firebase"
+        />
+      </Tooltip>
+
+      <Tooltip
+        label="VS Code"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/visual-studio-code.svg"
+          alt="VS Code"
+        />
+      </Tooltip>
+
+      <Tooltip
+        label="Webpack"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/webpack.svg"
+          alt="Webpack"
+        />
+      </Tooltip>
+      <Tooltip
+        label="Eslint"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/eslint.svg"
+          alt="Eslint"
+        />
+      </Tooltip>
+      <Tooltip
+        label="Git"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/git-icon.svg"
+          alt="Git"
         />
       </Tooltip>
     </Grid>
