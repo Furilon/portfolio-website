@@ -17,12 +17,15 @@ export default function Experience({ role, name, date, pointsArr }) {
         direction={{ base: "column", md: "row" }}
         mt={{ base: "0", md: "10px" }}
       >
-        <Text w={{ md: "175px" }}>{date}</Text>
+        <Text w={{ md: "175px" }} whiteSpace="nowrap">
+          {date}
+        </Text>
         <UnorderedList
           ml={{ base: "0", md: "50px" }}
           mt={{ base: "10px", md: "0" }}
           listStyleType="none"
           px={5}
+          w={{ md: "100%" }}
         >
           {pointsArr.map((point, index) => (
             <ListItem

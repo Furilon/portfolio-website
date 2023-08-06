@@ -149,6 +149,7 @@ export default function About() {
                 date="Jul 2023 - Present"
                 pointsArr={EXPERIENCE_TEXT["hyundai"]}
               />
+
               <Experience
                 role="Code Sensei"
                 name="Code Ninjas"
