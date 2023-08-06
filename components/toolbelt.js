@@ -397,7 +397,7 @@ export function Toolbelt() {
       </Tooltip>
 
       <Tooltip
-        label="Flask"
+        label="Socket.io"
         hasArrow
         bg="white"
         borderRadius="10px"
@@ -406,8 +406,8 @@ export function Toolbelt() {
         <GridItem
           as={Image}
           boxSize="75px"
-          src="/images/flask.svg"
-          alt="Flask"
+          src="/images/socketio.svg"
+          alt="Socket.io"
         />
       </Tooltip>
     </Grid>
