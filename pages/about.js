@@ -40,6 +40,13 @@ const EXPERIENCE_TEXT = {
     "Introduced cryptography principles with MicroBits.",
     "Instructed UI/UX fundamentals, encouraging campers to design and prototype user-friendly interfaces, nurturing their understanding of user-centered design principles.",
   ],
+  hyundai: [
+    "Proficiently customized Page Layouts and List Views, optimizing user experience and streamlining data accessibility.",
+    "Prepared 25-page impact analysis report on affected API references from renaming object fields.",
+    "Created and deployed custom Lightning Web Components (LWC) for Salesforce Flows, enhancing UI/UX and providing a seamless user experience.",
+    "Developer custom object and trigger logic using APEX.",
+    "Created comprehensive operational manuals and user guides, providing step-by-step instructions on Salesforce processes and functionalities.",
+  ],
 };
 
 export default function About() {
@@ -139,11 +146,18 @@ export default function About() {
             </Heading>
             <Flex direction="column" justify="center" align="center">
               <Experience
+                role="Intern - Software Engineer (internal Salesforce applications)"
+                name="Hyundai AutoEver America"
+                date="Jul 2023 - Present"
+                pointsArr={EXPERIENCE_TEXT["hyundai"]}
+              />
+              <Experience
                 role="Code Sensei"
                 name="Code Ninjas"
                 date="May 2023 - Jul 2023"
                 pointsArr={EXPERIENCE_TEXT["ninjas"]}
               />
+
               <Experience
                 role="Software Engineer"
                 name="Vennbury University"
