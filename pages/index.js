@@ -65,8 +65,7 @@ export default function Index() {
               I&apos;m interested in full-stack web development.
             </ListItem>
             <ListItem>
-              I&apos;m looking for a full-time junior front-end developer
-              position.
+              I&apos;m looking for a full-time software engineer position.
             </ListItem>
             <ListItem>
               My contact information is at the bottom of my{" "}
