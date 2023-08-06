@@ -104,28 +104,14 @@ export default function About() {
                   full-stack web developer
                 </Text>
                 . I aspire to build products and services that will positively
-                affect people’s lives. For the past year, I&apos;ve been working
-                on{" "}
-                <Link
-                  href="https://vennbury.com"
-                  textDecoration="underline"
-                  textDecorationColor="gray"
-                  fontWeight="bold"
-                >
-                  Vennbury University
-                </Link>{" "}
-                (about which you can read{" "}
-                <Link
-                  href="/project/vennbury"
-                  textDecoration="underline"
-                  textDecorationColor="gray"
-                  fontWeight="bold"
-                >
-                  here
-                </Link>
-                ), while also learning new technologies. I love problem-solving
-                and I adore the creative process that comes along with it. In my
-                free time, I play basketball and read books.
+                affect people’s lives. I am currently interning at{" "}
+                <Text as="span" fontWeight="bold">
+                  Hyundai AutoEver America
+                </Text>{" "}
+                as an SWE intern, working on internal Salesforce applications. I
+                love problem-solving and I adore the creative process that comes
+                along with it. In my free time, I play basketball and read
+                books.
               </Text>
             </Flex>
           </Flex>
