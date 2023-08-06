@@ -212,6 +212,9 @@ export function Toolbelt() {
           boxSize="75px"
           src="/images/socketio.svg"
           alt="Socket.io"
+          bg="white"
+          padding="5px"
+          borderRadius="20px"
         />
       </Tooltip>
 
@@ -260,6 +263,9 @@ export function Toolbelt() {
           boxSize="75px"
           src="/images/flask.svg"
           alt="Flask"
+          bg="white"
+          padding="5px"
+          borderRadius="20px"
         />
       </Tooltip>
 
@@ -275,6 +281,9 @@ export function Toolbelt() {
           boxSize="75px"
           src="/images/jupyter.svg"
           alt="Jupyter"
+          bg="white"
+          padding="5px"
+          borderRadius="20px"
         />
       </Tooltip>
 
@@ -315,6 +324,9 @@ export function Toolbelt() {
           boxSize="75px"
           src="/images/mysql.svg"
           alt="MySQL"
+          bg="white"
+          padding="5px"
+          borderRadius="20px"
         />
       </Tooltip>
 
@@ -330,6 +342,9 @@ export function Toolbelt() {
           boxSize="75px"
           src="/images/sqlite.svg"
           alt="SQLite"
+          bg="white"
+          padding="5px"
+          borderRadius="20px"
         />
       </Tooltip>
 
@@ -451,7 +466,15 @@ export function Learning() {
         borderRadius="10px"
         textColor="#1e1e1e"
       >
-        <GridItem as={Image} boxSize="75px" src="/images/java.svg" alt="Java" />
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/java.svg"
+          alt="Java"
+          bg="white"
+          padding="5px"
+          borderRadius="20px"
+        />
       </Tooltip>
 
       <Tooltip
