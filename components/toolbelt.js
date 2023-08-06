@@ -330,6 +330,21 @@ export function Toolbelt() {
           alt="Flask"
         />
       </Tooltip>
+
+      <Tooltip
+        label="Jupyter"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/jupyter.svg"
+          alt="Jupyter"
+        />
+      </Tooltip>
     </Grid>
   );
 }
