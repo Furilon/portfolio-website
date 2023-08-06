@@ -410,6 +410,21 @@ export function Toolbelt() {
           alt="Socket.io"
         />
       </Tooltip>
+
+      <Tooltip
+        label="SQLite"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/sqlite.svg"
+          alt="SQLite"
+        />
+      </Tooltip>
     </Grid>
   );
 }
