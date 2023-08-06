@@ -315,6 +315,21 @@ export function Toolbelt() {
           alt="GraphQL"
         />
       </Tooltip>
+
+      <Tooltip
+        label="Flask"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/flask.svg"
+          alt="Flask"
+        />
+      </Tooltip>
     </Grid>
   );
 }
@@ -358,7 +373,7 @@ export function Learning() {
           as={Image}
           boxSize="75px"
           src="/images/spring.svg"
-          alt="Java"
+          alt="Spring"
         />
       </Tooltip>
     </Grid>
