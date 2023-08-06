@@ -346,6 +346,21 @@ export function Learning() {
       >
         <GridItem as={Image} boxSize="75px" src="/images/java.svg" alt="Java" />
       </Tooltip>
+
+      <Tooltip
+        label="Spring"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/spring.svg"
+          alt="Java"
+        />
+      </Tooltip>
     </Grid>
   );
 }
