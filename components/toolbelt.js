@@ -365,6 +365,51 @@ export function Toolbelt() {
       >
         <GridItem as={Image} boxSize="75px" src="/images/sass.svg" alt="Sass" />
       </Tooltip>
+
+      <Tooltip
+        label="Flask"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/flask.svg"
+          alt="Flask"
+        />
+      </Tooltip>
+
+      <Tooltip
+        label="MySQL"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/mysql.svg"
+          alt="MySQL"
+        />
+      </Tooltip>
+
+      <Tooltip
+        label="Flask"
+        hasArrow
+        bg="white"
+        borderRadius="10px"
+        textColor="#1e1e1e"
+      >
+        <GridItem
+          as={Image}
+          boxSize="75px"
+          src="/images/flask.svg"
+          alt="Flask"
+        />
+      </Tooltip>
     </Grid>
   );
 }
