@@ -357,18 +357,13 @@ export function Toolbelt() {
       </Tooltip>
 
       <Tooltip
-        label="Flask"
+        label="Sass"
         hasArrow
         bg="white"
         borderRadius="10px"
         textColor="#1e1e1e"
       >
-        <GridItem
-          as={Image}
-          boxSize="75px"
-          src="/images/flask.svg"
-          alt="Flask"
-        />
+        <GridItem as={Image} boxSize="75px" src="/images/sass.svg" alt="Sass" />
       </Tooltip>
     </Grid>
   );
