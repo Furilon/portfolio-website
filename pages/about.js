@@ -34,6 +34,12 @@ const EXPERIENCE_TEXT = {
     "Provided change on items sold to cash customers",
     "Ensured clean and safe working environment",
   ],
+  ninjas: [
+    "Educated and mentored young minds in various STEM subjects, including 3D modeling with TinkerCAD, Scratch programming, and Makecode with MeowBits.",
+    "Conducted interactive workshops on electricity using Makey-Makeys.",
+    "Introduced cryptography principles with MicroBits.",
+    "Instructed UI/UX fundamentals, encouraging campers to design and prototype user-friendly interfaces, nurturing their understanding of user-centered design principles.",
+  ],
 };
 
 export default function About() {
@@ -93,8 +99,8 @@ export default function About() {
                   full-stack web developer
                 </Text>
                 . I aspire to build products and services that will positively
-                affect people’s lives. For the past year, I&apos;ve been
-                working on{" "}
+                affect people’s lives. For the past year, I&apos;ve been working
+                on{" "}
                 <Link
                   href="https://vennbury.com"
                   textDecoration="underline"
@@ -133,9 +139,15 @@ export default function About() {
             </Heading>
             <Flex direction="column" justify="center" align="center">
               <Experience
+                role="Code Sensei"
+                name="Code Ninjas"
+                date="May 2023 - Jul 2023"
+                pointsArr={EXPERIENCE_TEXT["ninjas"]}
+              />
+              <Experience
                 role="Software Engineer"
                 name="Vennbury University"
-                date="Apr 2022 - Present"
+                date="Apr 2022 - Apr 2023"
                 pointsArr={EXPERIENCE_TEXT["pandora"]}
               />
 
