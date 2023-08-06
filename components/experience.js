@@ -3,7 +3,7 @@ import { Flex, Text, Heading, UnorderedList, ListItem } from "@chakra-ui/react";
 export default function Experience({ role, name, date, pointsArr }) {
   return (
     <Flex direction="column" justify="center" align="center" mt="20px">
-      <Flex direction="column" justify="center" align="center">
+      <Flex direction="column" justify="center" align="center" mt="15px">
         <Heading as="h4" fontSize="1.2rem" fontStyle="italic">
           {name}
         </Heading>
