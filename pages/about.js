@@ -66,20 +66,22 @@ export default function About() {
               Who I am
             </Heading>
             <Flex
-              direction={{ base: "column", md: "row" }}
+              direction={{ base: "column", md: "row", lg: "column" }}
               justify="center"
               align="flex-start"
             >
               <Image
                 src="/Mykyta.jpg"
                 alt="Mykyta Medvediev's picture"
-                w={{ base: "341px", lg: "426px" }}
-                h={{ base: "375px", lg: "469px" }}
-                mr={{ base: "none", md: "20px" }}
-                mb={{ base: "20px", md: "none" }}
+                // 960x1280 pic
+                // base = 0.25, lg = 0.4
+                w={{ base: "240px", lg: "384px" }}
+                h={{ base: "320px", lg: "512px" }}
+                mr={{ base: "none", md: "20px", lg: "0px" }}
+                mb={{ base: "20px", md: "none", lg: "20px" }}
                 borderRadius="10px"
               />
-              <Text w={{ base: "341px", lg: "426px" }}>
+              <Text w={{ base: "341px", lg: "384px" }}>
                 My name is{" "}
                 <Tooltip
                   hasArrow
