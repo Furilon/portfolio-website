@@ -9,7 +9,6 @@ import {
   UnorderedList,
   Link,
 } from "@chakra-ui/react";
-// import Link from "next/link";
 import PageLayout from "../../../components/layouts/page";
 
 export async function getStaticProps() {
@@ -30,7 +29,7 @@ export async function getStaticProps() {
   function createLink(fileName) {
     const lowerCaseFileName = fileName.toLowerCase();
     const formattedFileName = lowerCaseFileName.replace(/ /g, "-");
-    const link = `library/notes/${formattedFileName}`;
+    const link = `/library/notes/${formattedFileName}`;
 
     return link;
   }
