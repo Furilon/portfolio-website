@@ -1,34 +1,59 @@
-import PageLayout from "../../../components/layouts/page";
-import { Box } from "@chakra-ui/react";
-
-import markdownIt from "markdown-it";
-import markdownItAnchor from "markdown-it-anchor";
 import matter from "gray-matter";
 
-const md = markdownIt({ html: true })
-  .use(markdownItAnchor, {
-    tabIndex: false,
-    permalink: markdownItAnchor.permalink.headerLink(),
-  })
-  .use(require("markdown-it-external-anchor"), {
-    domain: "medvediev.net",
-    class: "external",
-  });
+import {
+  Box,
+  Flex,
+  Text,
+  Heading,
+  ListItem,
+  UnorderedList,
+  Link,
+} from "@chakra-ui/react";
+// import Link from "next/link";
+import PageLayout from "../../../components/layouts/page";
 
 export async function getStaticProps() {
-  const { data: frontmatter, content } = matter.read(
-    "/home/furilon/portfolio-website/data/notes/3D heuristic.md"
-  );
+  const path = require("path");
+  const fs = require("fs");
 
-  return {
-    props: { frontmatter, content },
-  };
+  let linksMap = {};
+
+  function throughDirectory(directory) {
+    fs.readdirSync(directory).forEach((file) => {
+      const fileName = path.basename(file).split(".")[0];
+      const link = createLink(fileName);
+
+      linksMap[fileName] = link;
+    });
+  }
+
+  function createLink(fileName) {
+    const lowerCaseFileName = fileName.toLowerCase();
+    const formattedFileName = lowerCaseFileName.replace(/ /g, "-");
+    const link = `library/notes/${formattedFileName}`;
+
+    return link;
+  }
+
+  throughDirectory("data/notes");
+
+  const serializedLinksMap = JSON.stringify(linksMap);
+
+  return { props: { serializedLinksMap } };
 }
 
-export default function Notes({ frontmatter, content }) {
+export default function Notes({ serializedLinksMap }) {
+  const linksMap = JSON.parse(serializedLinksMap);
+
   return (
-    <PageLayout title="note page" background="light">
-      <Box dangerouslySetInnerHTML={{ __html: md.render(content) }}></Box>
+    <PageLayout title="all notes">
+      <UnorderedList>
+        {Object.entries(linksMap).map(([key, value]) => (
+          <ListItem key={key}>
+            <Link href={value}>{key}</Link>
+          </ListItem>
+        ))}
+      </UnorderedList>
     </PageLayout>
   );
 }
