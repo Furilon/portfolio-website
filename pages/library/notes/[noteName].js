@@ -15,10 +15,41 @@ const md = markdownIt({ html: true })
     class: "external",
   });
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticPaths() {
+  const Path = require("path");
+  const fs = require("fs");
+
+  let paths = [];
+
+  function throughDirectory(directory) {
+    fs.readdirSync(directory).forEach((file) => {
+      const fileName = Path.basename(file).split(".")[0];
+
+      const path = {
+        params: { noteName: fileName.toLowerCase().replace(/ /g, "-") },
+      };
+
+      paths.push(path);
+    });
+  }
+
+  throughDirectory("data/notes");
+
+  console.log(paths);
+
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params: { noteName } }) {
+  console.log(noteName);
+  let address = noteName.replace(/-/g, " ");
+  address = address.charAt(0).toUpperCase() + address.slice(1);
+
   const { data: frontmatter, content } = matter.read(
-    "/home/furilon/portfolio-website/data/notes/3D heuristic.md"
+    `/home/furilon/portfolio-website/data/notes/${address}.md`
   );
+
+  console.log(address);
 
   return {
     props: { frontmatter, content },
