@@ -39,6 +39,7 @@ const Navbar = () => {
         >
           <Link href="/works">Works</Link>
           <Link href="/about">About</Link>
+          <Link href="/library/notes">Library</Link>
         </Stack>
 
         <Box flex={1} align="right">
@@ -75,6 +76,14 @@ const Navbar = () => {
                     _active={{ bg: "#cdcdcd", textColor: "#1e1e1e" }}
                   >
                     About
+                  </MenuItem>
+                </Link>
+                <Link href="/library/notes">
+                  <MenuItem
+                    _focus={{ bg: "#cdcdcd", textColor: "#1e1e1e" }}
+                    _active={{ bg: "#cdcdcd", textColor: "#1e1e1e" }}
+                  >
+                    Library
                   </MenuItem>
                 </Link>
               </MenuList>
