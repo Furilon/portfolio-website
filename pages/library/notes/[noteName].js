@@ -41,7 +41,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { noteName } }) {
-  console.log(noteName);
   let address = noteName.replace(/-/g, " ");
   address = address.charAt(0).toUpperCase() + address.slice(1);
 

@@ -41,7 +41,7 @@ export async function getStaticProps() {
   return { props: { serializedLinksMap } };
 }
 
-export default function Notes({ serializedLinksMap }) {
+export default function Blog({ serializedLinksMap }) {
   const linksMap = JSON.parse(serializedLinksMap);
 
   return (
